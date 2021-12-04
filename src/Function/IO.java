@@ -14,6 +14,10 @@ public class IO {
         bw.write(sStr);
     }
 
+    public static void bWrite(char[] arChar) throws IOException{
+        bw.write(arChar);
+    }
+
     public static void EndProg() throws IOException{
         bw.flush();
         bw.close();
