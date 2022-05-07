@@ -10,20 +10,20 @@ public class Q2675 {
         int nTest, nRept;
         String sInput;
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 0; i < nTest; i++) {
-            st = new StringTokenizer(IO.bInput(), " ");
+            st = new StringTokenizer(IO.input(), " ");
             nRept = Cast.StoInt(st.nextToken());
             sInput = st.nextToken();
 
             for (int j = 0; j < sInput.length(); j++) {
-                IO.bWrite(Cast.CtoString(sInput.charAt(j)).repeat(nRept));
+                IO.write(Cast.CtoString(sInput.charAt(j)).repeat(nRept));
             }
 
-            IO.bWrite("\n");
+            IO.write("\n");
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

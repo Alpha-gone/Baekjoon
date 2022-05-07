@@ -9,18 +9,18 @@ public class Q2884 {
         StringTokenizer st;
         int nH, nM;
 
-        st = new StringTokenizer(IO.bInput(), " ");
+        st = new StringTokenizer(IO.input(), " ");
         nH = Cast.StoInt(st.nextToken());
         nM = Cast.StoInt(st.nextToken());
 
         if (nM - 45 > 0) {
-            IO.bWrite(Cast.ItoString(nH) + " " + Cast.ItoString(nM));
+            IO.write(Cast.ItoString(nH) + " " + Cast.ItoString(nM));
         } else if (nH == 0) {
-            IO.bWrite("23 " + Cast.ItoString(60 + (nM - 45)));
+            IO.write("23 " + Cast.ItoString(60 + (nM - 45)));
         } else {
-            IO.bWrite(Cast.ItoString(nH - 1) + " " + Cast.ItoString(60 + (nM - 45)));
+            IO.write(Cast.ItoString(nH - 1) + " " + Cast.ItoString(60 + (nM - 45)));
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

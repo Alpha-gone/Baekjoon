@@ -8,18 +8,18 @@ public class Q2447 {
     static char[][] starPanel;
 
     public static void main(String[] args) throws IOException {
-        int input = Cast.StoInt(IO.bInput());
+        int input = Cast.StoInt(IO.input());
 
         starPanel = new char[input][input];
         
         DrawStar(0, 0, input, false);
 
         for(int i = 0; i < input; i++){
-            IO.bWrite(starPanel[i]);
-            IO.bWrite("\n");
+            IO.write(starPanel[i]);
+            IO.write("\n");
         }
         
-        IO.EndProg();
+        IO.endProg();
     }
 
     public static void DrawStar(int x, int y, int panelSize, boolean blank){

@@ -7,21 +7,21 @@ public class Q9498 {
     public static void main(String[] args) throws IOException {
         int nA;
 
-        nA = Cast.StoInt(IO.bInput());
+        nA = Cast.StoInt(IO.input());
 
         if (nA >= 90) {
-            IO.bWrite("A");
+            IO.write("A");
         } else if (nA >= 80) {
-            IO.bWrite("B");
+            IO.write("B");
         } else if (nA >= 70) {
-            IO.bWrite("C");
+            IO.write("C");
         } else if (nA >= 60) {
-            IO.bWrite("D");
+            IO.write("D");
         } else {
-            IO.bWrite("F");
+            IO.write("F");
         }
 
-        IO.EndProg();
+        IO.endProg();
 
     }
 }

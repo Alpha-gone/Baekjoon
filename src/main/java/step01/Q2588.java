@@ -8,17 +8,17 @@ public class Q2588 {
         int nA, nSum = 0, nMul = 1;
         String sB;
 
-        nA = Cast.StoInt(IO.bInput());
-        sB = IO.bInput();
+        nA = Cast.StoInt(IO.input());
+        sB = IO.input();
 
         for (int i = sB.length() - 1; i >= 0; i--) {
-            IO.bWrite(Cast.ItoString(nA * Cast.CtoInt(sB.charAt(i))) + "\n");
+            IO.write(Cast.ItoString(nA * Cast.CtoInt(sB.charAt(i))) + "\n");
             nSum += nA * Cast.CtoInt(sB.charAt(i)) * nMul;
             nMul *= 10;
         }
 
-        IO.bWrite(Cast.ItoString(nSum));
-        IO.EndProg();
+        IO.write(Cast.ItoString(nSum));
+        IO.endProg();
 
     }
 }

@@ -1,4 +1,4 @@
-package step17;
+package step18;
 
 import Function.IO;
 
@@ -10,7 +10,7 @@ public class Q4949 {
         String input;
 
         while(true){
-            input = IO.bInput();
+            input = IO.input();
             if(input.equals(".")){
                 break;
             }
@@ -33,19 +33,18 @@ public class Q4949 {
                     break;
 
                 case ')':
-                    if(stack.empty() || stack.peek() != '('){
-                        return "no";
-                    }else{
-                        stack.pop();
-                    }
-                    break;
-
                 case ']':
-                    if(stack.empty() || stack.peek() != '['){
+                    try{
+                        popItem = stack.pop();
+                    }catch (Exception e){
                         return "no";
-                    }else{
-                        stack.pop();
                     }
+
+                    if(item == ')' && popItem != '(' ||
+                        item == ']' && popItem != '[' ){
+                        return "no";
+                    }
+
                     break;
             }
         }

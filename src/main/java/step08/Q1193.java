@@ -8,16 +8,16 @@ public class Q1193 {
         int nInput, nCrossCount = 1, nPreCrossCount = 0;
         boolean bWhile = true;
 
-        nInput = Cast.StoInt(IO.bInput());
+        nInput = Cast.StoInt(IO.input());
 
         while(bWhile){
             if(nInput <= nCrossCount + nPreCrossCount){
                 if(nCrossCount % 2 == 1){
-                    IO.bWrite(Cast.ItoString(nCrossCount - (nInput - nPreCrossCount - 1)) + " / " 
+                    IO.write(Cast.ItoString(nCrossCount - (nInput - nPreCrossCount - 1)) + " / " 
                             + Cast.ItoString(nInput - nPreCrossCount));
                     bWhile = false;
                 }else{
-                    IO.bWrite(Cast.ItoString(nInput - nPreCrossCount) + " / " 
+                    IO.write(Cast.ItoString(nInput - nPreCrossCount) + " / " 
                             + Cast.ItoString(nCrossCount - (nInput - nPreCrossCount - 1 )));
                     bWhile = false;
                 }
@@ -27,6 +27,6 @@ public class Q1193 {
             nCrossCount++;
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

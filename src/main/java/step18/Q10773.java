@@ -1,4 +1,4 @@
-package step17;
+package step18;
 
 import Function.Cast;
 import Function.IO;
@@ -12,10 +12,10 @@ public class Q10773 {
         int countOfCommend, inputNum;
         int stackSum = 0;
 
-        countOfCommend = Cast.StoInt(IO.bInput());
+        countOfCommend = Cast.StoInt(IO.input());
 
         for (int i = 0; i < countOfCommend; i++){
-            inputNum = Cast.StoInt(IO.bInput());
+            inputNum = Cast.StoInt(IO.input());
 
             if(inputNum != 0){
                 stack.push(inputNum);

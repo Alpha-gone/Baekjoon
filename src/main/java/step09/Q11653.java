@@ -7,17 +7,17 @@ public class Q11653 {
     public static void main(String[] args) throws IOException {
         int nInput, nPrime = 2;
 
-        nInput = Cast.StoInt(IO.bInput());
+        nInput = Cast.StoInt(IO.input());
 
         while (nInput != 1) {
             if (nInput % nPrime == 0) {
-                IO.bWrite(Cast.ItoString(nPrime) + "\n");
+                IO.write(Cast.ItoString(nPrime) + "\n");
                 nInput /= nPrime;
             } else {
                 nPrime++;
             }
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

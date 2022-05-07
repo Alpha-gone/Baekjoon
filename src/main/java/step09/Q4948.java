@@ -8,7 +8,7 @@ public class Q4948 {
         int nNum, nCount = 0;
         boolean bCheck;
 
-        while ((nNum = Cast.StoInt(IO.bInput())) != 0) {
+        while ((nNum = Cast.StoInt(IO.input())) != 0) {
             for (int i = nNum + 1; i <= nNum * 2; i++) {
                 bCheck = true;
 
@@ -28,10 +28,10 @@ public class Q4948 {
                 }
             }
 
-            IO.bWrite(Cast.ItoString(nCount) + "\n");
+            IO.write(Cast.ItoString(nCount) + "\n");
             nCount = 0;
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

@@ -30,10 +30,10 @@ public class Q4673 {
 
         for (int i = 0; i < arCheck.length; i++) {
             if (!arCheck[i]) {
-                IO.bWrite(Cast.ItoString(i + 1) + "\n");
+                IO.write(Cast.ItoString(i + 1) + "\n");
             }
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

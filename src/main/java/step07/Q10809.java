@@ -12,7 +12,7 @@ public class Q10809 {
 
         Arrays.fill(arIndex, -1);
 
-        sInput = IO.bInput();
+        sInput = IO.input();
 
         for (int i = 0; i < sInput.length(); i++) {
             if (arIndex[sInput.charAt(i) - 'a'] == -1) {
@@ -21,10 +21,10 @@ public class Q10809 {
         }
 
         for (int i = 0; i < arIndex.length; i++) {
-            IO.bWrite(Cast.ItoString(arIndex[i]) + " ");
+            IO.write(Cast.ItoString(arIndex[i]) + " ");
         }
 
-        IO.EndProg();
+        IO.endProg();
 
     }
 }

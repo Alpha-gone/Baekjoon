@@ -7,12 +7,12 @@ public class Q2742 {
     public static void main(String[] args) throws IOException {
         int nTest;
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = nTest; i >= 1; i--) {
-            IO.bWrite(Cast.ItoString(i) + "\n");
+            IO.write(Cast.ItoString(i) + "\n");
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

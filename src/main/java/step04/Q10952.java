@@ -11,7 +11,7 @@ public class Q10952 {
         boolean bWhile = true;
 
         while (bWhile == true) {
-            st = new StringTokenizer(IO.bInput(), " ");
+            st = new StringTokenizer(IO.input(), " ");
             nA = Cast.StoInt(st.nextToken());
             nB = Cast.StoInt(st.nextToken());
 
@@ -20,11 +20,11 @@ public class Q10952 {
                 continue;
             }
 
-            IO.bWrite(Cast.ItoString(nA + nB) + "\n");
+            IO.write(Cast.ItoString(nA + nB) + "\n");
 
         }
 
-        IO.EndProg();
+        IO.endProg();
 
     }
 }

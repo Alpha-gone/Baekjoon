@@ -1,11 +1,9 @@
-package step17;
+package step18;
 
 import Function.Cast;
 import Function.IO;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Q10828 {
@@ -14,11 +12,11 @@ public class Q10828 {
         StringTokenizer stringTokenizer;
         int countOfCommend;
 
-        countOfCommend = Cast.StoInt(IO.bInput());
+        countOfCommend = Cast.StoInt(IO.input());
         stack = new myStack(countOfCommend);
 
         for(int i = 0; i < countOfCommend; i++){
-            stringTokenizer = new StringTokenizer(IO.bInput(), " ");
+            stringTokenizer = new StringTokenizer(IO.input(), " ");
 
             switch (stringTokenizer.nextToken()){
                 case "push":

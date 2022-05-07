@@ -10,8 +10,8 @@ public class Q1978 {
         int nTest, nNum, nCount = 0;
         boolean bCheck;
 
-        nTest = Cast.StoInt(IO.bInput());
-        st = new StringTokenizer(IO.bInput(), " ");
+        nTest = Cast.StoInt(IO.input());
+        st = new StringTokenizer(IO.input(), " ");
 
         for (int i = 0; i < nTest; i++) {
             bCheck = true;
@@ -33,8 +33,8 @@ public class Q1978 {
             }
         }
 
-        IO.bWrite(Cast.ItoString(nCount));
+        IO.write(Cast.ItoString(nCount));
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

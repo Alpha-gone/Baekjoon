@@ -9,17 +9,17 @@ public class Q1712 {
         StringTokenizer st;
         int nA, nB, nC;
 
-        st = new StringTokenizer(IO.bInput(), " ");
+        st = new StringTokenizer(IO.input(), " ");
         nA = Cast.StoInt(st.nextToken());
         nB = Cast.StoInt(st.nextToken());
         nC = Cast.StoInt(st.nextToken());
 
         if (nB >= nC) {
-            IO.bWrite("-1");
+            IO.write("-1");
         } else {
-            IO.bWrite(Cast.ItoString(nA / (nC - nB) + 1));
+            IO.write(Cast.ItoString(nA / (nC - nB) + 1));
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

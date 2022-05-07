@@ -8,10 +8,10 @@ public class Q1152 {
     public static void main(String[] args) throws IOException {
         StringTokenizer st;
 
-        st = new StringTokenizer(IO.bInput(), " ");
+        st = new StringTokenizer(IO.input(), " ");
 
-        IO.bWrite(Cast.ItoString(st.countTokens()));
+        IO.write(Cast.ItoString(st.countTokens()));
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

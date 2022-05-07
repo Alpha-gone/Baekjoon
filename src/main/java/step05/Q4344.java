@@ -11,10 +11,10 @@ public class Q4344 {
         double dAvg = 0;
         int[] arScore;
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 0; i < nTest; i++) {
-            st = new StringTokenizer(IO.bInput(), " ");
+            st = new StringTokenizer(IO.input(), " ");
 
             nStudents = Cast.StoInt(st.nextToken());
             arScore = new int[nStudents];
@@ -33,7 +33,7 @@ public class Q4344 {
                 }
             }
 
-            IO.bWrite(Cast.DtoStrog(Math.round(((double) nCount / nStudents * 100) * 1000) / 1000.0) + "%");
+            IO.write(Cast.DtoString(Math.round(((double) nCount / nStudents * 100) * 1000) / 1000.0) + "%");
 
             nIndex = 0;
             nCount = 0;
@@ -41,7 +41,7 @@ public class Q4344 {
 
         }
 
-        IO.EndProg();
+        IO.endProg();
 
     }
 }

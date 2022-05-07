@@ -16,7 +16,7 @@ public class Cast{
         return Character.toString(cChar);
     }
 
-    public static String DtoStrog(double dNum){
+    public static String DtoString(double dNum){
         return Double.toString(dNum);
     }
 

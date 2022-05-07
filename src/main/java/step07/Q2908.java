@@ -6,7 +6,7 @@ import Function.*;
 
 public class Q2908 {
     public static void main(String[] args) throws IOException {
-        StringTokenizer st = new StringTokenizer(IO.bInput(), " ");
+        StringTokenizer st = new StringTokenizer(IO.input(), " ");
         StringBuffer sb;
         int[] arReNum = new int[2];
 
@@ -15,8 +15,8 @@ public class Q2908 {
             arReNum[i] = Cast.StoInt(sb.reverse().toString());
         }
 
-        IO.bWrite(Cast.ItoString(Math.max(arReNum[0], arReNum[1])));
+        IO.write(Cast.ItoString(Math.max(arReNum[0], arReNum[1])));
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

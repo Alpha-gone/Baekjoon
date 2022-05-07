@@ -10,7 +10,7 @@ public class Q2869 {
         StringTokenizer st;
         int nA, nB, nV, nDay;
 
-        st = new StringTokenizer(IO.bInput(), " ");
+        st = new StringTokenizer(IO.input(), " ");
         nA = Cast.StoInt(st.nextToken());
         nB = Cast.StoInt(st.nextToken());
         nV = Cast.StoInt(st.nextToken());
@@ -22,8 +22,8 @@ public class Q2869 {
         }
 
         // nDay = Math.ceil((double)(nV - nA) / (nA - nB));
-        IO.bWrite(Cast.ItoString(nDay));
+        IO.write(Cast.ItoString(nDay));
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

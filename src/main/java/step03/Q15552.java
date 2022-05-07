@@ -9,15 +9,15 @@ public class Q15552 {
         StringTokenizer st;
         int nTest, nA, nB;
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 0; i < nTest; i++) {
-            st = new StringTokenizer(IO.bInput(), " ");
+            st = new StringTokenizer(IO.input(), " ");
             nA = Cast.StoInt(st.nextToken());
             nB = Cast.StoInt(st.nextToken());
-            IO.bWrite(Cast.ItoString(nA + nB) + "\n");
+            IO.write(Cast.ItoString(nA + nB) + "\n");
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

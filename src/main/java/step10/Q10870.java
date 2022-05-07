@@ -5,12 +5,12 @@ import Function.*;
 
 public class Q10870 {
     public static void main(String[] args) throws IOException {
-        int input = Cast.StoInt(IO.bInput());
+        int input = Cast.StoInt(IO.input());
 
-        IO.bWrite(Cast.ItoString(pibo(input)));
+        IO.write(Cast.ItoString(pibo(input)));
             
         
-        IO.EndProg();
+        IO.endProg();
 
     }   
     

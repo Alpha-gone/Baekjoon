@@ -22,16 +22,16 @@ public class Q9020 {
             }
         }
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 0; i < nTest; i++) {
-            nNum = Cast.StoInt(IO.bInput());
+            nNum = Cast.StoInt(IO.input());
             nFirst = nNum / 2;
             nSencond = nNum / 2;
 
             while (bWhile) {
                 if (bPrime[nFirst] == true && bPrime[nSencond] == true) {
-                    IO.bWrite(Cast.ItoString(nFirst) + " " + Cast.ItoString(nSencond) + "\n");
+                    IO.write(Cast.ItoString(nFirst) + " " + Cast.ItoString(nSencond) + "\n");
                     bWhile = false;
                 }
                 nFirst--;
@@ -40,6 +40,6 @@ public class Q9020 {
 
             bWhile = true;
         }
-        IO.EndProg();
+        IO.endProg();
     }
 }

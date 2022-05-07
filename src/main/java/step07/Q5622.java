@@ -8,7 +8,7 @@ public class Q5622 {
         int nTime = 0;
         String sInput;
 
-        sInput = IO.bInput().toUpperCase();
+        sInput = IO.input().toUpperCase();
         for (int i = 0; i < sInput.length(); i++) {
             switch (sInput.charAt(i)) {
                 case 'A':
@@ -63,8 +63,8 @@ public class Q5622 {
             }
         }
 
-        IO.bWrite(Cast.ItoString(nTime));
+        IO.write(Cast.ItoString(nTime));
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

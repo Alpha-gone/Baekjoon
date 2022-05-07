@@ -8,7 +8,7 @@ public class Q1110 {
         int nStart, nA, nB, nNum, nCount = 1;
         boolean bWhile = true;
 
-        nStart = Cast.StoInt(IO.bInput());
+        nStart = Cast.StoInt(IO.input());
         nNum = nStart;
 
         while (bWhile == true) {
@@ -27,9 +27,9 @@ public class Q1110 {
             nCount++;
 
         }
-        IO.bWrite(Cast.ItoString(nCount));
+        IO.write(Cast.ItoString(nCount));
 
-        IO.EndProg();
+        IO.endProg();
 
     }
 }

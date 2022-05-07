@@ -8,10 +8,10 @@ public class Q1316 {
         int nTest, nFIndex = 0, nLIndex = 0, nCount = 0;
         String sInput, sSub;
         boolean bCheck = true;
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 0; i < nTest; i++) {
-            sInput = IO.bInput();
+            sInput = IO.input();
 
             for (int j = 0; j < sInput.length(); j++) {
                 nFIndex = sInput.indexOf(sInput.charAt(j));
@@ -41,8 +41,8 @@ public class Q1316 {
             bCheck = true;
         }
 
-        IO.bWrite(Cast.ItoString(nCount));
-        IO.bWrite("\n");
-        IO.EndProg();
+        IO.write(Cast.ItoString(nCount));
+        IO.write("\n");
+        IO.endProg();
     }
 }

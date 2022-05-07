@@ -8,8 +8,8 @@ public class Q2581 {
         int nStart, nEnd, nSum = 0, nMin = 0;
         boolean bCheck;
 
-        nStart = Cast.StoInt(IO.bInput());
-        nEnd = Cast.StoInt(IO.bInput());
+        nStart = Cast.StoInt(IO.input());
+        nEnd = Cast.StoInt(IO.input());
 
         for (int i = nStart; i < nEnd; i++) {
             bCheck = true;
@@ -34,12 +34,12 @@ public class Q2581 {
         }
 
         if (nMin != 0) {
-            IO.bWrite(Cast.ItoString(nSum) + "\n");
-            IO.bWrite(Cast.ItoString(nMin));
+            IO.write(Cast.ItoString(nSum) + "\n");
+            IO.write(Cast.ItoString(nMin));
         } else {
-            IO.bWrite("-1");
+            IO.write("-1");
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

@@ -9,7 +9,7 @@ public class Q1085 {
         StringTokenizer st;
         int nX, nY, nW, nH, nMinX, nMinY;
 
-        st = new StringTokenizer(IO.bInput(), " ");
+        st = new StringTokenizer(IO.input(), " ");
         nX = Cast.StoInt(st.nextToken());
         nY = Cast.StoInt(st.nextToken());
         nW = Cast.StoInt(st.nextToken());
@@ -18,8 +18,8 @@ public class Q1085 {
         nMinX = Math.min(nX, nW - nX);
         nMinY = Math.min(nY, nH - nY);
 
-        IO.bWrite(Cast.ItoString(Math.min(nMinX, nMinY)));
+        IO.write(Cast.ItoString(Math.min(nMinX, nMinY)));
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

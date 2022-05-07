@@ -10,8 +10,8 @@ public class Q10818 {
         int[] arNum;
         int nMax, nMin, nNum;
 
-        nNum = Cast.StoInt(IO.bInput());
-        st = new StringTokenizer(IO.bInput(), " ");
+        nNum = Cast.StoInt(IO.input());
+        st = new StringTokenizer(IO.input(), " ");
         arNum = new int[nNum];
 
         for (int i = 0; i < nNum; i++) {
@@ -30,8 +30,8 @@ public class Q10818 {
             }
         }
 
-        IO.bWrite(Cast.ItoString(nMin) + " " + Cast.ItoString(nMax));
-        IO.EndProg();
+        IO.write(Cast.ItoString(nMin) + " " + Cast.ItoString(nMax));
+        IO.endProg();
 
     }
 

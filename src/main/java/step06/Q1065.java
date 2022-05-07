@@ -32,8 +32,8 @@ public class Q1065 {
 
     public static void main(String[] args) throws IOException {
 
-        IO.bWrite(Cast.ItoString(hanNum(Cast.StoInt(IO.bInput()))));
+        IO.write(Cast.ItoString(hanNum(Cast.StoInt(IO.input()))));
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

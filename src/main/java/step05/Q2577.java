@@ -12,7 +12,7 @@ public class Q2577 {
         Arrays.fill(arNum, 0);
 
         for (int i = 0; i < 3; i++) {
-            nMul *= Cast.StoInt(IO.bInput());
+            nMul *= Cast.StoInt(IO.input());
         }
 
         for (int i = 0; i < Cast.ItoString(nMul).length(); i++) {
@@ -20,10 +20,10 @@ public class Q2577 {
         }
 
         for (int i = 0; i < 10; i++) {
-            IO.bWrite(Cast.ItoString(arNum[i]) + "\n");
+            IO.write(Cast.ItoString(arNum[i]) + "\n");
         }
 
-        IO.EndProg();
+        IO.endProg();
 
     }
 }

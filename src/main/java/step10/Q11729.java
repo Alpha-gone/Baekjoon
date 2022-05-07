@@ -8,12 +8,12 @@ public class Q11729 {
     static int count = 0;
     static StringBuffer sb = new StringBuffer();
     public static void main(String[] args) throws IOException {
-        int input = Cast.StoInt(IO.bInput());
+        int input = Cast.StoInt(IO.input());
 
         hanoi(input, 1, 2, 3);
-        IO.bWrite(Cast.ItoString(count) + "\n");
-        IO.bWrite(sb.toString());
-        IO.EndProg();
+        IO.write(Cast.ItoString(count) + "\n");
+        IO.write(sb.toString());
+        IO.endProg();
     }
 
     public static StringBuffer hanoi(int panel, int start, int mid, int target){

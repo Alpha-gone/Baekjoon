@@ -7,19 +7,19 @@ public class Q14681 {
     public static void main(String[] args) throws IOException {
         int nX, nY;
 
-        nX = Cast.StoInt(IO.bInput());
-        nY = Cast.StoInt(IO.bInput());
+        nX = Cast.StoInt(IO.input());
+        nY = Cast.StoInt(IO.input());
 
         if (nX > 0 && nY > 0) {
-            IO.bWrite("1");
+            IO.write("1");
         } else if (nX < 0 && nY > 0) {
-            IO.bWrite("2");
+            IO.write("2");
         } else if (nX < 0 && nY < 0) {
-            IO.bWrite("3");
+            IO.write("3");
         } else if (nX > 0 && nY < 0) {
-            IO.bWrite("4");
+            IO.write("4");
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

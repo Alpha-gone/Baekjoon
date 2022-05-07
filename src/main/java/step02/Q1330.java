@@ -9,19 +9,19 @@ public class Q1330 {
     StringTokenizer st;
     int nA, nB;
 
-    st = new StringTokenizer(IO.bInput(), " ");
+    st = new StringTokenizer(IO.input(), " ");
     nA = Cast.StoInt(st.nextToken());
     nB = Cast.StoInt(st.nextToken());
 
     if (nA > nB) {
-      IO.bWrite(">");
+      IO.write(">");
     } else if (nA < nB) {
-      IO.bWrite("<");
+      IO.write("<");
     } else {
-      IO.bWrite("==");
+      IO.write("==");
     }
 
-    IO.EndProg();
+    IO.endProg();
 
   }
 }

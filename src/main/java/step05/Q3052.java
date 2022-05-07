@@ -12,7 +12,7 @@ public class Q3052 {
         Arrays.fill(arCheck, false);
 
         for (int i = 0; i < 10; i++) {
-            arCheck[Cast.StoInt(IO.bInput()) % 42] = true;
+            arCheck[Cast.StoInt(IO.input()) % 42] = true;
         }
 
         for (int i = 0; i < arCheck.length; i++) {
@@ -22,8 +22,8 @@ public class Q3052 {
 
         }
 
-        IO.bWrite(Cast.ItoString(nCount));
-        IO.EndProg();
+        IO.write(Cast.ItoString(nCount));
+        IO.endProg();
 
     }
 }

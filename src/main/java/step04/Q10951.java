@@ -11,14 +11,14 @@ public class Q10951 {
         boolean bWhile = true;
 
         while (bWhile == true) {
-            st = new StringTokenizer(IO.bInput(), " ");
+            st = new StringTokenizer(IO.input(), " ");
             nA = Cast.StoInt(st.nextToken());
             nB = Cast.StoInt(st.nextToken());
 
-            IO.bWrite(Cast.ItoString(nA + nB) + "\n");
+            IO.write(Cast.ItoString(nA + nB) + "\n");
         }
 
-        IO.EndProg();
+        IO.endProg();
 
     }
 }

@@ -9,18 +9,18 @@ public class Q11022 {
         StringTokenizer st;
         int nTest, nA, nB;
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 0; i < nTest; i++) {
-            st = new StringTokenizer(IO.bInput(), " ");
+            st = new StringTokenizer(IO.input(), " ");
             nA = Cast.StoInt(st.nextToken());
             nB = Cast.StoInt(st.nextToken());
 
-            IO.bWrite("Case #" + Cast.ItoString(i + 1) + ": " + Cast.ItoString(nA) + " + "
+            IO.write("Case #" + Cast.ItoString(i + 1) + ": " + Cast.ItoString(nA) + " + "
                     + Cast.ItoString(nB) + " = " + Cast.ItoString(nA + nB));
-            IO.bWrite("\n");
+            IO.write("\n");
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

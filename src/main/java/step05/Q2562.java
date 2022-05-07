@@ -9,7 +9,7 @@ public class Q2562 {
         String[] sNum = new String[9];
 
         for (int i = 0; i < 9; i++) {
-            sNum[i] = IO.bInput();
+            sNum[i] = IO.input();
         }
 
         nMax = Cast.StoInt(sNum[0]);
@@ -21,8 +21,8 @@ public class Q2562 {
             }
         }
         
-        IO.bWrite(Cast.ItoString(nMax) + "\n");
-        IO.bWrite(Cast.ItoString(nIndex));
-        IO.EndProg();
+        IO.write(Cast.ItoString(nMax) + "\n");
+        IO.write(Cast.ItoString(nIndex));
+        IO.endProg();
     }
 }

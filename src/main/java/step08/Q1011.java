@@ -10,10 +10,10 @@ public class Q1011 {
         int nTest, nDistence, nMax;
         int nX = 0, nY = 0;
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 0; i < nTest; i++) {
-            st = new StringTokenizer(IO.bInput(), " ");
+            st = new StringTokenizer(IO.input(), " ");
             nX = Cast.StoInt(st.nextToken());
             nY = Cast.StoInt(st.nextToken());
 
@@ -21,15 +21,15 @@ public class Q1011 {
             nMax = (int) Math.sqrt(nDistence);
 
             if (nMax == Math.sqrt(nDistence)) {
-                IO.bWrite(Cast.ItoString(nMax * 2 - 1));
+                IO.write(Cast.ItoString(nMax * 2 - 1));
             } else if (nDistence <= nMax * nMax + nMax) {
-                IO.bWrite(Cast.ItoString(nMax * 2));
+                IO.write(Cast.ItoString(nMax * 2));
             } else {
-                IO.bWrite(Cast.ItoString(nMax * 2 - 1));
+                IO.write(Cast.ItoString(nMax * 2 - 1));
             }
 
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

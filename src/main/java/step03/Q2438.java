@@ -7,13 +7,13 @@ public class Q2438 {
     public static void main(String[] args) throws IOException {;
         int nTest;
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 1; i <= nTest; i++) {
-            IO.bWrite("*".repeat(i) + "\n");
+            IO.write("*".repeat(i) + "\n");
         }
 
-        IO.EndProg();
+        IO.endProg();
 
     }
 }

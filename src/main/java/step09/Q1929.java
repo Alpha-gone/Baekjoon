@@ -11,7 +11,7 @@ public class Q1929 {
         int nStart, nEnd;
         boolean[] bPrime;
 
-        st = new StringTokenizer(IO.bInput(), " ");
+        st = new StringTokenizer(IO.input(), " ");
         nStart = Cast.StoInt(st.nextToken());
         nEnd = Cast.StoInt(st.nextToken());
 
@@ -30,10 +30,10 @@ public class Q1929 {
 
         for (int i = nStart; i < nEnd; i++) {
             if (bPrime[i]) {
-                IO.bWrite(Cast.ItoString(i) + "\n");
+                IO.write(Cast.ItoString(i) + "\n");
             }
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

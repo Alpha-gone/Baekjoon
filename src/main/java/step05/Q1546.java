@@ -12,10 +12,10 @@ public class Q1546 {
         double[] arNum;
         double nMax, nSum = 0;
 
-        nSub = Cast.StoInt(IO.bInput());
+        nSub = Cast.StoInt(IO.input());
         arNum = new double[nSub];
         Arrays.fill(arNum, 0);
-        st = new StringTokenizer(IO.bInput(), " ");
+        st = new StringTokenizer(IO.input(), " ");
 
         for (int i = 0; i < nSub; i++) {
             arNum[i] = Cast.StoInt(st.nextToken());
@@ -34,8 +34,8 @@ public class Q1546 {
             nSum += arNum[i];
         }
 
-        IO.bWrite(Cast.DtoStrog(nSum / nSub));
-        IO.EndProg();
+        IO.write(Cast.DtoString(nSum / nSub));
+        IO.endProg();
 
     }
 }

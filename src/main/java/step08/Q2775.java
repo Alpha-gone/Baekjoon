@@ -19,13 +19,13 @@ public class Q2775 {
             }
         }
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
         for(int i = 0; i < nTest; i++){
-            nK = Cast.StoInt(IO.bInput());
-            nN = Cast.StoInt(IO.bInput());
+            nK = Cast.StoInt(IO.input());
+            nN = Cast.StoInt(IO.input());
 
-            IO.bWrite(Cast.ItoString(apt[nK][nN]) + "\n");
+            IO.write(Cast.ItoString(apt[nK][nN]) + "\n");
         }
-        IO.EndProg();
+        IO.endProg();
         }
 }

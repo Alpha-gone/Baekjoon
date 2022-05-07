@@ -11,7 +11,7 @@ public class Q10757 {
         int[][] arNum;
         int nMaxLen;
 
-        st = new StringTokenizer(IO.bInput(), " ");
+        st = new StringTokenizer(IO.input(), " ");
         sA = st.nextToken();
         sB = st.nextToken();
 
@@ -32,9 +32,9 @@ public class Q10757 {
         }
 
         for(int i = 0; i < arNum[2].length; i++){
-            IO.bWrite(Cast.ItoString(arNum[2][i]));
+            IO.write(Cast.ItoString(arNum[2][i]));
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

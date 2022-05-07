@@ -6,10 +6,10 @@ import Function.*;
 
 public class Q10872 {
     public static void main(String[] args) throws IOException {
-        int input = Cast.StoInt(IO.bInput());
+        int input = Cast.StoInt(IO.input());
         
-        IO.bWrite(Cast.ItoString(facto(input)));
-        IO.EndProg();
+        IO.write(Cast.ItoString(facto(input)));
+        IO.endProg();
     }
 
     public static int facto(int num){

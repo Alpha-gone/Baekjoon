@@ -11,10 +11,10 @@ public class Q10250 {
         int nTest, nH, nN;
         int nX = 0, nY = 0;
 
-        nTest = Cast.StoInt(IO.bInput());
+        nTest = Cast.StoInt(IO.input());
 
         for (int i = 0; i < nTest; i++) {
-            st = new StringTokenizer(IO.bInput(), " ");
+            st = new StringTokenizer(IO.input(), " ");
             nH = Cast.StoInt(st.nextToken());
             st.nextToken();
             nN = Cast.StoInt(st.nextToken());
@@ -27,9 +27,9 @@ public class Q10250 {
                 nX = nN / nH + 1;
             }
 
-            IO.bWrite(Cast.ItoString(nY + nX) + "\n");
+            IO.write(Cast.ItoString(nY + nX) + "\n");
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }

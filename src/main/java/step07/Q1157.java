@@ -13,7 +13,7 @@ public class Q1157 {
 
         Arrays.fill(arIndex, 0);
 
-        sInput = IO.bInput().toUpperCase();
+        sInput = IO.input().toUpperCase();
 
         while (sInput.length() != 0) {
             arIndex[sInput.charAt(0) - 'A'] = sInput.length()
@@ -38,11 +38,11 @@ public class Q1157 {
         }
 
         if (bCheck) {
-            IO.bWrite("-1");
+            IO.write("-1");
         } else {
-            IO.bWrite(Cast.CtoString((char) (nIndex + 'A')));
+            IO.write(Cast.CtoString((char) (nIndex + 'A')));
         }
 
-        IO.EndProg();
+        IO.endProg();
     }
 }
